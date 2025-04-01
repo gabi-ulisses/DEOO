@@ -1,6 +1,3 @@
-Aqui está um README completo, combinando os comandos do Git e as instruções sobre o Beanstalk App e o NetBeans:
-
-```markdown
 # Aula - Configuração de Projeto e Controle de Versão
 
 ## Beanstalk App
