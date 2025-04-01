@@ -82,6 +82,3 @@ git log
 - Crie um arquivo `.gitignore` para excluir arquivos ou pastas que não devem ser versionados.
 
 ---
-
-Esse README cobre todos os aspectos mencionados e pode ser usado como guia para sua aula ou projeto. Se precisar de algo mais específico, posso ajustar! 😊
-```
