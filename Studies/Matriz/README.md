@@ -1,18 +1,59 @@
-## Getting Started
+# Matriz Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
+Este projeto implementa uma classe **Matriz** em Java, que representa uma matriz quadrada de tamanho **2x2** ou **3x3**. A classe permite a execução de diversas operações matemáticas sobre a matriz, como:
 
-## Folder Structure
+- Definição e manipulação de elementos
+- Soma, subtração, multiplicação e divisão
+- Cálculo do determinante
+- Busca do maior e menor elemento
 
-The workspace contains two folders by default, where:
+O projeto está estruturado com um pacote **model** para a classe Matriz e um pacote **view** para a execução no programa principal.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Estrutura do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```
+com/ibag/matriz/
+├── model/
+│   └── Matriz.java
+└── view/
+    └── Main.java
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Como Executar
 
-## Dependency Management
+### 1. Clonar o Repositório
+```sh
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_DIRETORIO>
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### 2. Compilar o Projeto
+```sh
+javac -d bin com/ibag/matriz/model/Matriz.java com/ibag/matriz/view/Main.java
+```
+
+### 3. Executar o Programa
+```sh
+java -cp bin com.ibag.matriz.view.Main
+```
+
+## Exemplo de Saída
+```
+Matriz inicial 2x2:
+[ 1.0 1.0 ]
+[ 1.0 1.0 ]
+
+Após alterar um elemento (posição [0][1] para 5.0):
+[ 1.0 5.0 ]
+[ 1.0 1.0 ]
+
+Após adicionar 2.0 a todos os elementos:
+[ 3.0 7.0 ]
+[ 3.0 3.0 ]
+
+Determinante da matriz: -12.0
+```
+
+## Autora
+- **Gabrielle Ulisses**
