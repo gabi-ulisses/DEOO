@@ -3,7 +3,7 @@ package com.ibag.library.model;
 public class LivroFisico extends MaterialBibliografico{
 
     public LivroFisico(String localizacao, String titulo, String autores, int edicao, int ano, int quantidade) {
-            super(localizacao, titulo, autores, edicao, ano, quantidade);
+            super(localizacao, titulo, autores, edicao, ano, 5);
             
         }
     
