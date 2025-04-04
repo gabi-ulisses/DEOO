@@ -2,7 +2,7 @@ package com.ibag.library.model;
 
 public class Revista extends MaterialBibliografico{
 
-    public Revista(String localizacao, String titulo, String autores, int edicao, int ano, int quantidade) {
+    public Revista(String localizacao, String titulo, String autores, int edicao, int ano) {
             super(localizacao, titulo, autores, edicao, ano, 3);
         }
     

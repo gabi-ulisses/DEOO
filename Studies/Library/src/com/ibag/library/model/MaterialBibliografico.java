@@ -15,7 +15,7 @@ public abstract class MaterialBibliografico implements Emprestavel{
         setAutores(autores);
         setEdicao(edicao);
         setAno(ano);
-        setAno(ano);
+        setQuantidade(quantidade);
     }
 
     public String getLocalizacao(){
