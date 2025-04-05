@@ -1,4 +1,5 @@
 public class Data {
+    
     private int dia, mes, ano;
 
     public int getDia() {
@@ -9,7 +10,7 @@ public class Data {
         if(dia >= 1 && dia <= 31){
             this.dia = dia;
         }else{
-            throw new RuntimeException("O dia deve estar entre 1 e 31.");
+            throw new ErroNaoVerificado("O dia deve estar entre 1 e 31."); // RuntimeException("O dia deve estar entre 1 e 31.");
         }
     }
 
@@ -21,7 +22,7 @@ public class Data {
         if(mes >= 1 && mes <= 12){
             this.mes = mes;
         }else{
-            throw new Exception("O mês deve estar entre 1 e 12.");
+            throw new ErroVerificado("O mês deve estar entre 1 e 12."); // Exception("O mês deve estar entre 1 e 12.");
         }
     }
 
@@ -33,7 +34,7 @@ public class Data {
          if(ano >0){
             this.ano = ano;
         }else{
-            throw new RuntimeException("O ano tem que ser positivo.");
+            throw new ErroNaoVerificado("O ano tem que ser positivo."); // RuntimeException("O ano tem que ser positivo.");
         }
     }
 }
