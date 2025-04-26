@@ -24,7 +24,7 @@ public class Buffer {
     public synchronized void set(int valor) throws Exception {
         
         while (ocupado == true) { /* Verifica se o buffer está ocupado. */
-            System.out.println("Tentou escrever, mas o buffer está ocupado.");
+            System.out.println("Tentou escrever "+ valor +", mas o buffer está ocupado com o valor " + this.valor +".");
             wait(); /* Coloca a thread atual em espera até que o buffer fique livre. */
         }
         
@@ -42,7 +42,7 @@ public class Buffer {
     public synchronized int get() throws Exception {
         
         while (ocupado == false) { /* Verifica se o buffer está vazio. */
-            System.out.println("Tentou ler, mas o buffer está vazio.");
+            System.out.println("Tentou ler "+ valor +", mas o buffer está vazio.");
             wait(); /* Coloca a thread atual em espera até que o buffer seja preenchido. */
         }
         
