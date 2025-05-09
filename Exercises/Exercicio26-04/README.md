@@ -1,0 +1,1 @@
+Com base na aula de Concorrência (Threads), crie um Produtor/Consumidor com Buffer de inteiros com tamanho variável (definido na criação do objeto do tipo Buffer) utilizando ArrayList.
